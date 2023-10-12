@@ -1,0 +1,18 @@
+﻿<Page x:Class="GestionDeInventarioWPF.Screens.MenuPrincipal"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GestionDeInventarioWPF.Screens"
+      mc:Ignorable="d" 
+      d:DesignHeight="684" d:DesignWidth="1272"
+      Title="MenuPrincipal">
+
+    <Grid Background="#131313" Height="684" Width="1272">
+        <Button x:Name="ListaDeProductos_Button" Content="Lista De Productos" HorizontalAlignment="Left" Margin="33,36,0,0" VerticalAlignment="Top" Width="200" Height="60" FontFamily="Segoe UI Black" FontSize="20" Click="ListaDeProductos_Button____Click"/>
+        <Button x:Name="AgregarProducto_Button" Content="Agregar Producto" HorizontalAlignment="Left" Margin="33,124,0,0" VerticalAlignment="Top" Width="200" Height="60" FontFamily="Segoe UI Black" FontSize="20" Click="AgregarProducto_Button_Click"/>
+        <Button x:Name="EditarProducto_Button" Content="Editar Producto" HorizontalAlignment="Left" Margin="33,216,0,0" VerticalAlignment="Top" Width="200" Height="60" FontSize="20" FontFamily="Segoe UI Black" Click="EditarProducto_Button_Click"/>
+        <Button x:Name="EliminarProducto_Button" Content="Eliminar Producto" HorizontalAlignment="Left" Margin="33,308,0,0" VerticalAlignment="Top" Width="200" FontSize="20" FontFamily="Segoe UI Black" Height="60" Click="EliminarProducto_Button_Click"/>
+        <Button x:Name="Clientes_Button" Content="Clientes" HorizontalAlignment="Left" Margin="33,490,0,0" VerticalAlignment="Top" Width="200" Height="60" FontSize="20" FontFamily="Segoe UI Black" Click="Clientes_Button_Click"/>
+    </Grid>
+</Page>

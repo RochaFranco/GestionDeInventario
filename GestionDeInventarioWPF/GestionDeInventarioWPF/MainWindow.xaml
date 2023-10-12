@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GestionDeInventarioWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="715" Width="1280">
+    <Grid Background="#131313">
+        <Frame x:Name="FramePaginas" Content="Frame" HorizontalAlignment="Left" Height="684" VerticalAlignment="Top" Width="1272"/>
+
+
     </Grid>
 </Window>

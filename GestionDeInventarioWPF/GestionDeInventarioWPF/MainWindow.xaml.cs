@@ -1,4 +1,6 @@
-﻿using System;
+﻿using GestionDeInventarioWPF.Clases;
+using GestionDeInventarioWPF.Screens;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +25,26 @@ namespace GestionDeInventarioWPF
         public MainWindow()
         {
             InitializeComponent();
+
+            Loaded += MainWindow_Loaded;
+
+            Messenger.PageRequested += (pageUri) => FramePaginas.NavigationService.Navigate(pageUri);
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+            ListaDeProductos listaDeProductos = new ListaDeProductos();
+
+            FramePaginas.NavigationService.Navigate(listaDeProductos);
+        }
+
+        private void MainWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            MenuPrincipal menuPrincipal = new MenuPrincipal();
+
+            FramePaginas.NavigationService.Navigate(menuPrincipal);
         }
     }
 }
