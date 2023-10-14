@@ -1,4 +1,6 @@
-﻿using System;
+﻿using GestionDeInventarioWPF.Clases;
+using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,6 +22,9 @@ namespace GestionDeInventarioWPF.Screens
     /// </summary>
     public partial class EditarProductoPagina : Page
     {
+
+        DBManager dbManager = new DBManager();
+
         public EditarProductoPagina()
         {
             InitializeComponent();
@@ -27,7 +32,34 @@ namespace GestionDeInventarioWPF.Screens
 
         private void EditarProducto_Button_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                // Código de inserción aquí
+                string query = "UPDATE Producto SET nombre = @nombre, precio = @precio, descuento = @descuento, stock = @stock WHERE id = @id";
+                using (MySqlCommand cmd = new MySqlCommand(query, dbManager.GetConnection()))
+                {
 
+                    dbManager.OpenConnection();
+
+                    cmd.Parameters.AddWithValue("@id", IdProducto_TextBox.Text);
+                    cmd.Parameters.AddWithValue("@nombre", NombreProducto_TextBox.Text);
+                    cmd.Parameters.AddWithValue("@precio", float.Parse(PrecioProducto_TextBox.Text));
+                    cmd.Parameters.AddWithValue("@descuento", float.Parse(DescuentoProducto_TextBox.Text));
+                    cmd.Parameters.AddWithValue("@stock", int.Parse(StockProducto_TextBox.Text));
+
+                    cmd.ExecuteNonQuery();
+
+                    dbManager.CloseConnection();
+
+                    MessageBox.Show("Producto Editado exitosamente", "Éxito", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                }
+            }
+            catch (Exception ex)
+            {
+                // Manejo de la excepción
+                MessageBox.Show("Error al editar el producto: " + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
     }
 }
