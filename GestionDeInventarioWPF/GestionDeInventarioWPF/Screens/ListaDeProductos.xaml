@@ -9,6 +9,6 @@
       Title="ListaDeProductos">
 
     <Grid Background="#131313" Width="1272" Height="684">
-        <DataGrid Background="#383838" HorizontalAlignment="Left" Height="620" Margin="398,30,0,0" VerticalAlignment="Top" Width="838"/>
+        <DataGrid x:Name="DataGrid_Productos" Background="#383838" HorizontalAlignment="Left" Height="620" Margin="398,30,0,0" VerticalAlignment="Top" Width="838" SelectionChanged="DataGrid_SelectionChanged"/>
     </Grid>
 </Page>

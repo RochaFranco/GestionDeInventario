@@ -1,5 +1,8 @@
-﻿using System;
+﻿using GestionDeInventarioWPF.Clases;
+using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,14 +23,38 @@ namespace GestionDeInventarioWPF.Screens
     /// </summary>
     public partial class ListaDeProductos : Page
     {
+
+        DBManager dbManager = new DBManager();
+
         public ListaDeProductos()
         {
             InitializeComponent();
+
+            DataTable dataTable = new DataTable();
+
+            using (MySqlCommand cmd = new MySqlCommand("SELECT * FROM Producto", dbManager.GetConnection()))
+            {
+                dbManager.OpenConnection();
+
+                using (MySqlDataReader reader = cmd.ExecuteReader())
+                {
+                    dataTable.Load(reader);
+                }
+
+                dbManager.CloseConnection();
+            }
+
+            DataGrid_Productos.ItemsSource = dataTable.DefaultView;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
         }
     }
 }
