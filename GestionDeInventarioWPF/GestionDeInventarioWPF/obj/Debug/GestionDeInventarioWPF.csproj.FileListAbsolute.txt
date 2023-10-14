@@ -17,3 +17,12 @@ D:\RepositoriosGit\GestionDeInventario\GestionDeInventarioWPF\GestionDeInventari
 D:\RepositoriosGit\GestionDeInventario\GestionDeInventarioWPF\GestionDeInventarioWPF\obj\Debug\GestionDeInventarioWPF.pdb
 D:\RepositoriosGit\GestionDeInventario\GestionDeInventarioWPF\GestionDeInventarioWPF\obj\Debug\Screens\MenuPrincipal.g.cs
 D:\RepositoriosGit\GestionDeInventario\GestionDeInventarioWPF\GestionDeInventarioWPF\obj\Debug\Screens\MenuPrincipal.baml
+D:\RepositoriosGit\GestionDeInventario\GestionDeInventarioWPF\GestionDeInventarioWPF\obj\Debug\Screens\AgregarProductoPagina.g.cs
+D:\RepositoriosGit\GestionDeInventario\GestionDeInventarioWPF\GestionDeInventarioWPF\obj\Debug\Screens\EditarProductoPagina.g.cs
+D:\RepositoriosGit\GestionDeInventario\GestionDeInventarioWPF\GestionDeInventarioWPF\obj\Debug\Screens\EliminarProductoPagina.g.cs
+D:\RepositoriosGit\GestionDeInventario\GestionDeInventarioWPF\GestionDeInventarioWPF\obj\Debug\Screens\AgregarProductoPagina.baml
+D:\RepositoriosGit\GestionDeInventario\GestionDeInventarioWPF\GestionDeInventarioWPF\obj\Debug\Screens\EditarProductoPagina.baml
+D:\RepositoriosGit\GestionDeInventario\GestionDeInventarioWPF\GestionDeInventarioWPF\obj\Debug\Screens\EliminarProductoPagina.baml
+D:\RepositoriosGit\GestionDeInventario\GestionDeInventarioWPF\GestionDeInventarioWPF\bin\Debug\MySql.Data.dll
+D:\RepositoriosGit\GestionDeInventario\GestionDeInventarioWPF\GestionDeInventarioWPF\bin\Debug\MySql.Data.xml
+D:\RepositoriosGit\GestionDeInventario\GestionDeInventarioWPF\GestionDeInventarioWPF\obj\Debug\GestionDeInventarioWPF.csproj.CopyComplete

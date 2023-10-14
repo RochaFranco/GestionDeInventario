@@ -29,26 +29,22 @@ namespace GestionDeInventarioWPF.Screens
 
         private void ListaDeProductos_Button____Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindows = new MainWindow();
-
-            ListaDeProductos listaDeProductos = new ListaDeProductos();
-
             Messenger.RequestPage(new Uri("Screens/ListaDeProductos.xaml", UriKind.Relative));
         }
 
         private void AgregarProducto_Button_Click(object sender, RoutedEventArgs e)
         {
-
+            Messenger.RequestPage(new Uri("Screens/AgregarProductoPagina.xaml", UriKind.Relative));
         }
 
         private void EditarProducto_Button_Click(object sender, RoutedEventArgs e)
         {
-
+            Messenger.RequestPage(new Uri("Screens/EditarProductoPagina.xaml", UriKind.Relative));
         }
 
         private void EliminarProducto_Button_Click(object sender, RoutedEventArgs e)
         {
-
+            Messenger.RequestPage(new Uri("Screens/EliminarProductoPagina.xaml", UriKind.Relative));
         }
 
         private void Clientes_Button_Click(object sender, RoutedEventArgs e)

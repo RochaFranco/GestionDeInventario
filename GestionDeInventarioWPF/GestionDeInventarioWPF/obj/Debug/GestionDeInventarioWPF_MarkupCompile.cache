@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\RepositoriosGit\GestionDeInventario\GestionDeInventarioWPF\GestionDeInventarioWPF\App.xaml
-3-1905707632
+6-454918434
 
-8-1012066599
-13-1505183044
-MainWindow.xaml;Screens\ListaDeProductos.xaml;Screens\MenuPrincipal.xaml;
+12517030489
+14126476366
+MainWindow.xaml;Screens\AgregarProductoPagina.xaml;Screens\EditarProductoPagina.xaml;Screens\EliminarProductoPagina.xaml;Screens\ListaDeProductos.xaml;Screens\MenuPrincipal.xaml;
 
 False
 

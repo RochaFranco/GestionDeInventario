@@ -8,5 +8,7 @@
       d:DesignHeight="684" d:DesignWidth="1272"
       Title="ListaDeProductos">
 
-    <Grid Background="Red" Width="1272" Height="684"/>
+    <Grid Background="#131313" Width="1272" Height="684">
+        <DataGrid Background="#383838" HorizontalAlignment="Left" Height="620" Margin="398,30,0,0" VerticalAlignment="Top" Width="838"/>
+    </Grid>
 </Page>
